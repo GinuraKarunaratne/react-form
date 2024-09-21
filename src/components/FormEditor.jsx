@@ -113,7 +113,7 @@ const FormEditor = () => {
 
             {/* Right: Mirrored Fields */}
             <div className="form-mirror">
-                <div className="form-mirror">
+                <div className='left-mirror'>
                     <div className="form-group" id='m1'>
                         <input
                             type="text"
@@ -143,6 +143,24 @@ const FormEditor = () => {
                             style={{ fontSize: '16px', width: 'auto', minWidth: '50px', maxWidth: '200px' }}
                         />
                     </div>
+                </div>
+
+                <div className='right-mirror'>
+                    {formData.image && (
+                        <div className="image-preview-mirror" style={{ marginTop: '20px' }}>
+                            <img
+                                src={URL.createObjectURL(formData.image)}
+                                alt="Selected"
+                            />
+                            <button
+                                type="button"
+                                className="remove-image-button"
+                                onClick={handleRemoveImage}
+                            >
+                                <RemoveCircleIcon style={{ color: 'red' }} />
+                            </button>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>
