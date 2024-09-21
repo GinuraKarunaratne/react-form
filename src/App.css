@@ -31,3 +31,8 @@ body {
     position: absolute;
     top: 50px;
 }
+
+#mail-btn{
+    margin-top: 20px;
+    padding: 10px 105px;
+}

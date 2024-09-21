@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './FormEditor.css';
+import '../components/FormEditor.css';
 import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
 
 const FormEditor = () => {
@@ -119,7 +119,7 @@ const FormEditor = () => {
                             type="button"
                             name="mirroredTitle"
                             value={formData.title}
-                            style={{ fontSize: '38px', width: 'auto', minWidth: '550px', maxWidth: '550px'}}
+                            style={{ fontSize: '38px', width: 'auto', minWidth: '50px', maxWidth: '550px'}}
                         />
                     </div>
 
@@ -128,7 +128,7 @@ const FormEditor = () => {
                             type="button"
                             name="mirroredDescription"
                             value={formData.description}
-                            style={{ fontSize: '28px', width: 'auto', minWidth: '250px', maxWidth: '550px'}}
+                            style={{ fontSize: '28px', width: 'auto', minWidth: '50px', maxWidth: '550px'}}
                         />
                     </div>
 

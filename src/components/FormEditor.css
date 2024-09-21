@@ -105,7 +105,6 @@ button:hover {
     border-radius: 8px;
 }
 
-/* Remove Button - Hidden Initially */
 .remove-image-button {
     position: absolute;
     top: 50%;
@@ -170,12 +169,14 @@ button:hover {
 
 
 #m1 input {
+    text-align: left;
     font-size: 38px;
     font-family: poppins;
     font-weight: 500;
 }
 
 #m2 input {
+    text-align: left;
     font-size: 28px;
     font-family: poppins;
     font-weight: 400;

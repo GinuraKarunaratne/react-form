@@ -1,19 +1,33 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import FormEditor from './components/FormEditor';
+import FuncMail from './components/FuncMail';
 
 function App() {
   return (
-    <div>
-      {/* Dashboard Heading */}
-      <div className="heading">
-        <h7>Dashboard</h7>
-      </div>
-      <div className='fields'>
-        <FormEditor/>
-      </div>
-    </div>
+    <Router>
+      <div>
+        {/* Dashboard Heading */}
+        <div className="heading">
+          <h7>Dashboard</h7>
+        </div>
 
+        {/* Define Routes */}
+        <Routes>
+          <Route path="/" element={
+            <div className='fields'>
+              <FormEditor />
+              {/* Button to navigate to FuncMail */}
+              <Link to="/func-mail">
+                <button id='mail-btn'>Add email</button>
+              </Link>
+            </div>
+          } />
+          <Route path="/func-mail" element={<FuncMail />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

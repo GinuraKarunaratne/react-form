@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import '../components/FuncMail.css';
 
 const FuncMail = () => {
     const [formData, setFormData] = useState({
-        title: '',
-        description: '',
-        email: '',
-        isEmailRequired: false,
+        mailTitle: '',
+        mailDescription: '',
+        mailEmail: '',
+        isMailEmailRequired: false,
     });
 
     const handleChange = (e) => {
@@ -18,79 +20,91 @@ const FuncMail = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (formData.isEmailRequired && !formData.email) {
+        if (formData.isMailEmailRequired && !formData.mailEmail) {
             alert('Email is required');
             return;
         }
-        console.log('Form Data Submitted:', formData);
+        console.log('Mail Form Data Submitted:', formData);
     };
 
     const handleDiscard = () => {
         setFormData({
-            title: '',
-            description: '',
-            email: '',
-            isEmailRequired: false,
+            mailTitle: '',
+            mailDescription: '',
+            mailEmail: '',
+            isMailEmailRequired: false,
         });
-        console.log('Form Data Discarded');
+        console.log('Mail Form Data Discarded');
     };
 
     return (
-        <div className="form-container">
-            <form onSubmit={handleSubmit} className="form-original">
+        <div className="mail-form-container">
+            <form onSubmit={handleSubmit} className="mail-form-original">
                 {/* Title Field */}
-                <div className="form-group">
-                    <label>Title</label>
+                <div className="mail-form-group">
+                    <label>Mail Title</label>
                     <input
                         type="text"
-                        name="title"
-                        value={formData.title}
+                        name="mailTitle"
+                        value={formData.mailTitle}
                         onChange={handleChange}
                     />
                 </div>
 
                 {/* Description Field */}
-                <div className="form-group">
-                    <label>Description</label>
+                <div className="mail-form-group">
+                    <label>Mail Description</label>
                     <input
                         type="text"
-                        name="description"
-                        value={formData.description}
+                        name="mailDescription"
+                        value={formData.mailDescription}
                         onChange={handleChange}
                     />
                 </div>
 
-                {/* Email Required Switch */}
-                <div className="form-group">
-                    <label>
-                        <input
-                            type="checkbox"
-                            name="isEmailRequired"
-                            checked={formData.isEmailRequired}
-                            onChange={handleChange}
-                        />
-                        Require Email
-                    </label>
-                </div>
-
-                {/* Email Field */}
-                <div className="form-group">
-                    <label>Email</label>
-                    <input
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        required={formData.isEmailRequired}
-                    />
-                </div>
-
-                {/* Save and Discard Buttons */}
-                <div className="button-group">
+                <div className="mail-button-group">
                     <button type="submit">Save</button>
-                    <button id='disc' type="button" onClick={handleDiscard}>Discard</button>
+                    <button className='mail-discard-button' type="button" onClick={handleDiscard}>Discard</button>
                 </div>
+
+                <Link to="/">
+                    <button id='back-btn'>Welcome Page</button>
+                </Link>
+
             </form>
+
+            <div className="mail-form-mirror">
+                <div className='main-form'>
+                    <div className="mail-form-group" id='f1'>
+                        <input
+                            type="button"
+                            name="mirroredTitle"
+                            value={formData.mailTitle}
+                            style={{ width: 'auto', minWidth: '50px', maxWidth: '550px' }}
+                        />
+                    </div>
+
+                    <div className="mail-form-group" id='f2'>
+                        <input
+                            type="button"
+                            name="mirroredDescription"
+                            value={formData.mailDescription}
+                            style={{ width: 'auto', minWidth: '50px', maxWidth: '550px' }}
+                        />
+                    </div>
+
+                    <div className="mail-form-group" id='f3'>
+                        <input
+                            type="text"
+                            name="mirroredButtonText"
+                            value={formData.mirroredButtonText}
+                            onChange={handleChange}
+                            style={{ minWidth: '500px', Width: 'auto', maxWidth: '550px' }}
+                        />
+                    </div>
+
+                </div>
+            </div>
         </div>
     );
 };
