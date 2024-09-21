@@ -1,6 +1,19 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
 .form-group {
     margin-bottom: 15px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.form-original {
+    flex: 1;
 }
 
 .form-group label {
@@ -114,4 +127,69 @@ button:hover {
 /* Show Button on Hover */
 .image-preview:hover .remove-image-button {
     display: block;
+}
+
+.form-mirror {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    left: 325px;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 20px;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+}
+
+.form-mirror .form-group{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 150px;
+}
+
+
+.form-mirror .form-group input {
+    width: 700px;
+    max-height: 70px;
+    border: none;
+    background-color: transparent;
+    font-family: 'Poppins';
+    padding: 5px 0;
+    white-space: normal;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+
+#m1 input {
+    font-size: 38px;
+    font-family: poppins;
+    font-weight: 500;
+}
+
+#m2 input {
+    font-size: 28px;
+    font-family: poppins;
+    font-weight: 400;
+}
+
+#m3 input {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: poppins;
+}
+
+#m2{
+    top: 90px;
+}
+
+#m3{
+    top: 160px;
+    border-radius:12px;
+    padding: 5px 15px;
+    background-color: rgb(0, 0, 0);
+    min-width: 50px;
+    max-width: 700px;
+    overflow: hidden;
 }
