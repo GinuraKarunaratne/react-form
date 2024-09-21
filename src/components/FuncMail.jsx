@@ -40,7 +40,6 @@ const FuncMail = () => {
     return (
         <div className="mail-form-container">
             <form onSubmit={handleSubmit} className="mail-form-original">
-                {/* Title Field */}
                 <div className="mail-form-group">
                     <label>Mail Title</label>
                     <input
@@ -51,7 +50,6 @@ const FuncMail = () => {
                     />
                 </div>
 
-                {/* Description Field */}
                 <div className="mail-form-group">
                     <label>Mail Description</label>
                     <input
@@ -70,7 +68,6 @@ const FuncMail = () => {
                 <Link to="/">
                     <button id='back-btn'>Welcome Page</button>
                 </Link>
-
             </form>
 
             <div className="mail-form-mirror">
@@ -97,12 +94,11 @@ const FuncMail = () => {
                         <input
                             type="text"
                             name="mirroredButtonText"
-                            value={formData.mirroredButtonText}
+                            value={formData.mailEmail}
                             onChange={handleChange}
-                            style={{ minWidth: '500px', Width: 'auto', maxWidth: '550px' }}
+                            style={{ minWidth: '500px', width: 'auto', maxWidth: '550px' }}
                         />
                     </div>
-
                 </div>
             </div>
         </div>

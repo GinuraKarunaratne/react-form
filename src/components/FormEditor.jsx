@@ -50,7 +50,6 @@ const FormEditor = () => {
                     />
                 </div>
 
-                {/* Description Field */}
                 <div className="form-group">
                     <label>Description</label>
                     <input
@@ -60,7 +59,6 @@ const FormEditor = () => {
                     />
                 </div>
 
-                {/* Button Text Field */}
                 <div className="form-group">
                     <label>Button Text</label>
                     <input
@@ -71,7 +69,6 @@ const FormEditor = () => {
                     />
                 </div>
 
-                {/* Upload Image Field */}
                 <div className="image-group">
                     <input
                         type="file"
@@ -79,14 +76,13 @@ const FormEditor = () => {
                         accept="image/*"
                         id="file-input"
                         onChange={handleChange}
-                        style={{ display: 'none' }} // Hide the default file input
+                        style={{ display: 'none' }}
                     />
                     <label htmlFor="file-input" className="upload-button">
                         <span>Insert Image</span>
                     </label>
                 </div>
 
-                {/* Display Selected Image */}
                 {formData.image && (
                     <div className="image-preview">
                         <img
@@ -104,14 +100,12 @@ const FormEditor = () => {
                     </div>
                 )}
 
-                {/* Save and Discard Buttons */}
                 <div className="button-group">
                     <button type="submit">Save</button>
                     <button id='disc' type="button" onClick={handleDiscard}>Discard</button>
                 </div>
             </form>
 
-            {/* Right: Mirrored Fields */}
             <div className="form-mirror">
                 <div className='left-mirror'>
                     <div className="form-group" id='m1'>
@@ -119,7 +113,7 @@ const FormEditor = () => {
                             type="button"
                             name="mirroredTitle"
                             value={formData.title}
-                            style={{ fontSize: '38px', width: 'auto', minWidth: '50px', maxWidth: '550px'}}
+                            style={{ fontSize: '38px', width: 'auto', minWidth: '50px', maxWidth: '550px' }}
                         />
                     </div>
 
@@ -128,7 +122,7 @@ const FormEditor = () => {
                             type="button"
                             name="mirroredDescription"
                             value={formData.description}
-                            style={{ fontSize: '28px', width: 'auto', minWidth: '50px', maxWidth: '550px'}}
+                            style={{ fontSize: '28px', width: 'auto', minWidth: '50px', maxWidth: '550px' }}
                         />
                     </div>
 

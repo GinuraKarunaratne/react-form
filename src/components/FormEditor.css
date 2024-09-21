@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
 .form-group {
@@ -55,7 +54,7 @@ button:hover {
     color: black;
 }
 
-#disc{
+#disc {
     font-size: 12px;
     font-family: poppins;
     padding: 10px 50px;
@@ -89,7 +88,6 @@ button:hover {
     color: black;
 }
 
-/* Image Preview Styles */
 .image-preview {
     margin-bottom: 15px;
     position: relative;
@@ -118,12 +116,6 @@ button:hover {
     display: none;
 }
 
-.remove-image-button:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-}
-
-/* Show Button on Hover */
 .image-preview:hover .remove-image-button {
     display: block;
 }
@@ -143,19 +135,18 @@ button:hover {
     align-items: center;
 }
 
-.form-mirror .form-group{
+.form-mirror .form-group {
     margin-bottom: 150px;
     margin-left: 40px;
 }
 
-#m1{
+#m1 {
     margin-bottom: 0;
 }
 
-#m2{
+#m2 {
     margin-bottom: 15px;
 }
-
 
 .form-mirror .form-group input {
     color: rgb(0, 0, 0);
@@ -166,7 +157,6 @@ button:hover {
     overflow: hidden;
     border: none;
 }
-
 
 #m1 input {
     text-align: left;
@@ -209,4 +199,3 @@ button:hover {
     opacity: 1;
     transform: none;
 }
-

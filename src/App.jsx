@@ -8,17 +8,17 @@ function App() {
   return (
     <Router>
       <div>
-        {/* Dashboard Heading */}
+        
         <div className="heading">
           <h7>Dashboard</h7>
         </div>
 
-        {/* Define Routes */}
+        
         <Routes>
           <Route path="/" element={
             <div className='fields'>
               <FormEditor />
-              {/* Button to navigate to FuncMail */}
+              
               <Link to="/func-mail">
                 <button id='mail-btn'>Add email</button>
               </Link>

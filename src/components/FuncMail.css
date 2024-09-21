@@ -4,7 +4,6 @@
     display: flex;
     margin-top: 70px;
     margin-left: 25px;
-    display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 30px;
@@ -74,7 +73,7 @@
     color: rgb(255, 255, 255);
 }
 
-#back-btn{
+#back-btn {
     margin-top: 20px;
     padding: 10px 90px;
 }
@@ -96,8 +95,8 @@
     background-color: #f2f2f2;
     border: 1px solid #d3d3d3;
     border-radius: 6px;
-    color: #333; /* Text color */
-    cursor: not-allowed; /* Indicate that it's read-only */
+    color: #333;
+    cursor: not-allowed;
 }
 
 .mail-form-mirror {
@@ -144,12 +143,12 @@
     cursor: default;
 }
 
-#f1 input{
+#f1 input {
     font-size: 38px;
     width: auto;
     min-width: 50px;
     max-width: 550px;
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
 #f2 input {
@@ -157,7 +156,7 @@
     width: auto;
     min-width: 50px;
     max-width: 550px;
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
 #f3 input {
@@ -167,14 +166,14 @@
     max-width: 550px;
     text-align: left;
     padding: 20px 20px;
-    border-radius:0;
+    border-radius: 0;
 }
 
-#f3 input :active{
+#f3 input:active {
     border: none;
 }
 
-.main-form{
+.main-form {
     margin-top: 150px;
-    margin-left: 120px
+    margin-left: 120px;
 }
