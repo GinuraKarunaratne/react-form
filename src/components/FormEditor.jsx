@@ -116,21 +116,19 @@ const FormEditor = () => {
                 <div className='left-mirror'>
                     <div className="form-group" id='m1'>
                         <input
-                            type="text"
+                            type="button"
                             name="mirroredTitle"
                             value={formData.title}
-                            readOnly
-                            style={{ fontSize: '38px' }}
+                            style={{ fontSize: '38px', width: 'auto', minWidth: '550px', maxWidth: '550px'}}
                         />
                     </div>
 
                     <div className="form-group" id='m2'>
                         <input
-                            type="text"
+                            type="button"
                             name="mirroredDescription"
                             value={formData.description}
-                            readOnly
-                            style={{ fontSize: '28px' }}
+                            style={{ fontSize: '28px', width: 'auto', minWidth: '250px', maxWidth: '550px'}}
                         />
                     </div>
 
@@ -139,8 +137,7 @@ const FormEditor = () => {
                             type="button"
                             name="mirroredButtonText"
                             value={formData.buttonText}
-                            readOnly
-                            style={{ fontSize: '16px', width: 'auto', minWidth: '50px', maxWidth: '200px' }}
+                            style={{ fontSize: '16px', width: 'auto' }}
                         />
                     </div>
                 </div>
