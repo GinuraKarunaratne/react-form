@@ -1,8 +1,21 @@
-# React + Vite
+# Form Editor Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/react-%23D42029.svg?style=flat&logo=react&logoColor=white)![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat&logo=css3&logoColor=white) 
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project includes two simple interfaces for Form Editors built with React, JavaScript, and CSS. Users can create and customize forms easily.
+
+## Features
+
+- **Dynamic Fields**: Input titles, descriptions, and button texts.
+- **Image Upload**: Upload and preview images.
+- **Live Preview**: See changes in real-time.
+- **Reset Option**: Discard changes and reset fields.
+
+## Technologies Used
+
+- **React** 
+- **JavaScript**
+- **CSS**
+- **Material-UI Icons**
